@@ -91,7 +91,7 @@
           </div>
           <div class="mb-3">
             <label class="form-label" class="text-normal text-dark">Password</label>
-            <input type="password" class="form-control" placeholder="Password">
+            <input type="password" name="password" class="form-control" placeholder="Password">
           </div>
           <div class="mb-3">
             <label class="form-label" class="text-normal text-dark">Telepon</label>

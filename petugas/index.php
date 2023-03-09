@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+// if ($_SESSION['level'] == "level") {
+//     header("location:../login.php?info=login");
+// }
+
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -64,12 +73,6 @@
 </head>
 
 <body class="app">
-
-
-
-
-
-
     <div id="loader">
         <div class="spinner"></div>
     </div>
@@ -101,7 +104,7 @@
                                         </div>
                                     </div>
                                     <div class="peer peer-greed">
-                                        <h5 class="lh-1 mB-0 logo-text">Adminator</h5>
+                                        <h5 class="lh-1 mB-0 logo-text">Petugas</h5>
                                     </div>
                                 </div>
                             </a>
@@ -117,47 +120,49 @@
                 </div>
 
                 <!-- ### $Sidebar Menu ### -->
-          <ul class="sidebar-menu scrollable pos-r">
-            <li class="nav-item mT-30 actived">
-              <a class="sidebar-link" href="index.html">
-                <span class="icon-holder">
-                  <i class="c-blue-500 ti-home"></i>
-                </span>
-                <span class="title">Dashboard</span>
-              </a>
-            </li>
-            
-            <li class="nav-item">
-              <a class="sidebar-link" href="forms.html">
-                <span class="icon-holder">
-                  <i class="c-light-blue-500 ti-pencil"></i>
-                </span>
-                <span class="title">Forms</span>
-              </a>
-            </li>
-            
-            <li class="nav-item dropdown">
-              <a class="dropdown-toggle" href="javascript:void(0);">
-                <span class="icon-holder">
-                  <i class="c-orange-500 ti-layout-list-thumb"></i>
-                </span>
-                <span class="title">Tables</span>
-                <span class="arrow">
-                  <i class="ti-angle-right"></i>
-                </span>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="sidebar-link" href="basic-table.html">Masyarakat</a>
-                </li>
-                <li>
-                  <a class="sidebar-link" href="datatable.html">Laporan</a>
-                </li>
-              </ul>
-            </li> 
-          </ul>
-        </div>
-      </div>
+
+                <ul class="sidebar-menu scrollable pos-r">
+                    <li class="nav-item mT-30 actived">
+                        <a class="sidebar-link" href="index.html">
+                            <span class="icon-holder">
+                                <i class="c-blue-500 ti-home"></i>
+                            </span>
+                            <span class="title">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="sidebar-link" href="forms.html">
+                            <span class="icon-holder">
+                                <i class="c-light-blue-500 ti-pencil"></i>
+                            </span>
+                            <span class="title">Forms</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle" href="javascript:void(0);">
+                            <span class="icon-holder">
+                                <i class="c-orange-500 ti-layout-list-thumb"></i>
+                            </span>
+                            <span class="title">Tables</span>
+                            <span class="arrow">
+                                <i class="ti-angle-right"></i>
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="sidebar-link" href="data_pengaduan.php">Masyarakat</a>
+                            </li>
+                            <li>
+                                <a class="sidebar-link" href="datatable.html">Laporan</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+          
+
             </div>
         </div>
 
@@ -203,7 +208,7 @@
                                                 </div>
                                                 <div class="peer peer-greed">
                                                     <span>
-                                                        <span class="fw-500">Petugas</span>
+                                                        <span class="fw-500">John Doe</span>
                                                         <span class="c-grey-600">liked your <span class="text-dark">post</span>
                                                         </span>
                                                     </span>
@@ -278,7 +283,7 @@
                                                     <div>
                                                         <div class="peers jc-sb fxw-nw mB-5">
                                                             <div class="peer">
-                                                                <p class="fw-500 mB-0">Petugas</p>
+                                                                <p class="fw-500 mB-0">John Doe</p>
                                                             </div>
                                                             <div class="peer">
                                                                 <small class="fsz-xs">5 mins ago</small>
@@ -350,7 +355,7 @@
                                     <img class="w-2r bdrs-50p" src="https://randomuser.me/api/portraits/men/10.jpg" alt="">
                                 </div>
                                 <div class="peer">
-                                    <span class="fsz-sm c-grey-900">Petugas</span>
+                                    <span class="fsz-sm c-grey-900">John Doe</span>
                                 </div>
                             </a>
                             <ul class="dropdown-menu fsz-sm">
