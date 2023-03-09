@@ -18,7 +18,14 @@ if ($cek > 0) {
         $_SESSION['level'] = 'admin';
 
         header("location:admin/index.php");
+    } else if($data['level'] == 'petugas') {
+        $_SESSION['id_petugas'] = $id_petugas;
+        $_SESSION['username'] = $username;
+        $_SESSION['password'] = $password;
+        $_SESSION['level'] = 'petugas';
+
+        header("location:petugas/index.php");
+    } else {
+        header("location:login.php?info=gagal");
     }
 }
-
-?>

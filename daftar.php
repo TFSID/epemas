@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-    <title>Sign Up</title>
+    <title>Daftar</title>
     <style>
       #loader {
         transition: all 0.3s ease-in-out;
@@ -76,25 +76,29 @@
       </div>
       <div class="col-12 col-md-4 peer pX-40 pY-80 h-100 bgc-white scrollable pos-r" style="min-width: 320px;">
         <h4 class="fw-300 c-grey-900 mB-40">Register</h4>
-        <form>
-          <div class="mb-3">
-            <label class="form-label" class="text-normal text-dark">Username</label>
-            <input type="text" class="form-control" placeholder="John Doe">
+        <form action="register.php" method="post">
+        <div class="mb-3">
+            <label class="form-label" class="text-normal text-dark">NIK</label>
+            <input type="text" name="nik" class="form-control" placeholder="NIK">
           </div>
           <div class="mb-3">
-            <label class="form-label" class="text-normal text-dark">Email Address</label>
-            <input type="email" class="form-control" placeholder="name@email.com">
+            <label class="form-label" class="text-normal text-dark">Nama</label>
+            <input type="text" name="nama" class="form-control" placeholder="Nama">
+          </div>
+          <div class="mb-3">
+            <label class="form-label" class="text-normal text-dark">Username</label>
+            <input type="text" name="username" class="form-control" placeholder="Username">
           </div>
           <div class="mb-3">
             <label class="form-label" class="text-normal text-dark">Password</label>
             <input type="password" class="form-control" placeholder="Password">
           </div>
           <div class="mb-3">
-            <label class="form-label" class="text-normal text-dark">Confirm Password</label>
-            <input type="password" class="form-control" placeholder="Password">
+            <label class="form-label" class="text-normal text-dark">Telepon</label>
+            <input type="text" name="telp" class="form-control" placeholder="Telepon">
           </div>
           <div class="mb-3">
-            <button class="btn btn-primary btn-color">Register</button>
+            <button type="submit" class="btn btn-primary btn-color">Daftar</button>
           </div>
         </form>
       </div>
