@@ -15,6 +15,10 @@ class Laporan extends BaseController
 
     public function L_pengaduan()
     {
+        return redirect()->to(base_url('petugas/laporan/pengaduan'));
+    }
+
+    public function pengaduan(){
         $crud = new GroceryCrud();
         // $crud->setTheme('bootstrap-v5');
         // $crud->setSkin('bootstrap-v5');

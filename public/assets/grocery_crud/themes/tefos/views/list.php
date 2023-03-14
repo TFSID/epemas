@@ -28,7 +28,7 @@
 <?php foreach($list as $num_row => $row){ ?>        
 		<tr  <?php if($num_row % 2 == 1){?>class=""<?php }?>>
 			<?php foreach($columns as $column){?>
-			<td width='<?php echo $column_width?>%' class='<?php if(isset($order_by[0]) &&  $column->field_name == $order_by[0]){?>sorted<?php }?>'>
+			<td width='<?php echo $column_width?>%' class='<?php if(isset($order_by[0]) &&  $column->field_name == $order_by[0]){?>sorted<?php }?>  '>
 				<div class='text-left text-wrap'><?php echo $row->{$column->field_name} != '' ? $row->{$column->field_name} : '&nbsp;' ; ?></div>
 			</td>
 			<?php }?>

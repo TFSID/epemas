@@ -33,7 +33,7 @@ if($success_message !== null){?>
 	<p><?php echo $success_message; ?></p>
 <?php }
 ?></div>
-<div class="flexigrid card" style='width: 100%;' data-unique-hash="<?php echo $unique_hash; ?>">
+<div class="flexigrid card row" style='width: 100%;' data-unique-hash="<?php echo $unique_hash; ?>">
 	<div id="hidden-operations" class="hidden-operations"></div>
 	<div class="col-12">
 		<div class=" card-header pb-0">
@@ -90,22 +90,23 @@ if($success_message !== null){?>
 		<?php echo $list_view?>
 	</div>
 	<?php echo form_open( $ajax_list_url, 'method="post" id="filtering_form" class="filtering_form" autocomplete = "off" data-ajax-list-info-url="'.$ajax_list_info_url.'"'); ?>
-	<div class=" quickSearchBox" id='quickSearchBox'>
-		<div class="">
+	<div class=" quickSearchBox container-fluid bg-gradient-dark text-center py-3 text-white border-radius-sm mb-2  mt-2" id='quickSearchBox'>
+		<div class="d-flex flex-wrap gap-3">
 			<?php echo $this->l('list_search');?>: <input type="text" class="qsbsearch_fieldox search_text" name="search_text" size="30" id='search_text'>
-			<select name="search_field" id="search_field">
+			<select class="btn bg-primary" name="search_field" id="search_field">
 				<?php foreach($columns as $column){?>
 				<option value="<?php echo $column->field_name?>"><?php echo $column->display_as?>&nbsp;&nbsp;</option>
 				<?php }?>
 			</select>
-            <input type="button" value="<?php echo $this->l('list_search');?>" class="crud_search" id='crud_search'>
+            <input class="btn btn-info" type="button" value="<?php echo $this->l('list_search');?>" class="crud_search" id='crud_search'>
+			<div class='search-div-clear-button p-0'>
+        	<input class="btn btn-primary " type="button " value="<?php echo $this->l('list_clear_filtering');?>" id='search_clear' class="search_clear">
+        	</div>
 		</div>
-        <div class='search-div-clear-button'>
-        	<input type="button" value="<?php echo $this->l('list_clear_filtering');?>" id='search_clear' class="search_clear">
-        </div>
+        
 	</div>
-	<div class="pDiv">
-		<div class="pDiv2">
+	<div class="pDiv  ">
+		<div class="pDiv2 container bg-gradient-info text-center py-3 text-white border-radius-sm mb-2 w-100  ">
 			<div class="pGroup">
 				<span class="pcontrol">
 					<?php list($show_lang_string, $entries_lang_string) = explode('{paging}', $this->l('list_show_entries')); ?>

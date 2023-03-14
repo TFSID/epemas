@@ -497,8 +497,8 @@ div.colCopy {
 	padding-bottom:4px;
 }
 .flexigrid tr td.sorted {
-	background:#f3f3f3;
-	border-right:1px solid #ddd;
+	/* background:#252f40; */
+	/* border-right:1px solid #ddd; */
 	border-bottom:1px solid #f3f3f3;
 }
 .flexigrid tr td.sorted div {
@@ -552,9 +552,9 @@ div.colCopy {
 }
 /* end novstripe */
 .flexigrid div.pDiv {
-	background:url(images/wbg.gif) repeat-x 0 -1px;
-	border:1px solid #ccc;
-	border-top:0px;
+	/* background:url(images/wbg.gif) repeat-x 0 -1px; */
+	/* border:1px solid #ccc; */
+	/* border-top:0px; */
 	overflow:hidden;
 	white-space:nowrap;
 	position:relative;
