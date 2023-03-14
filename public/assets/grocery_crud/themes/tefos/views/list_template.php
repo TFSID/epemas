@@ -93,14 +93,14 @@ if($success_message !== null){?>
 	<div class=" quickSearchBox container-fluid bg-gradient-dark text-center py-3 text-white border-radius-sm mb-2  mt-2" id='quickSearchBox'>
 		<div class="d-flex flex-wrap gap-3">
 			<?php echo $this->l('list_search');?>: <input type="text" class="qsbsearch_fieldox search_text" name="search_text" size="30" id='search_text'>
-			<select class="btn bg-primary" name="search_field" id="search_field">
+			<select class=" " name="search_field" id="search_field">
 				<?php foreach($columns as $column){?>
 				<option value="<?php echo $column->field_name?>"><?php echo $column->display_as?>&nbsp;&nbsp;</option>
 				<?php }?>
 			</select>
-            <input class="btn btn-info" type="button" value="<?php echo $this->l('list_search');?>" class="crud_search" id='crud_search'>
+            <input  type="button" value="<?php echo $this->l('list_search');?>" class="btn btn-info crud_search" id='crud_search'>
 			<div class='search-div-clear-button p-0'>
-        	<input class="btn btn-primary " type="button " value="<?php echo $this->l('list_clear_filtering');?>" id='search_clear' class="search_clear">
+        	<input  type="button" value="<?php echo $this->l('list_clear_filtering');?>" id='search_clear' class="btn btn-primary search_clear">
         	</div>
 		</div>
         

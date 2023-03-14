@@ -56,6 +56,7 @@ $routes->group('petugas',['namespace' => 'App\Controllers\Petugas'], function($r
     $routes->get('dashboard','Petugas::index');
     $routes->get('pengaduan','Laporan::L_pengaduan');
     $routes->get('profile','Petugas::profile');
+    $routes->get('tanggapan','Laporan::R_tanggapan');
     $routes->resource('Laporan');
 });
 
