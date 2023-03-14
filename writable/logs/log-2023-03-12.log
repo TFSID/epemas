@@ -1,0 +1,1480 @@
+INFO - 2023-03-12 04:08:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-12 04:11:00 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'epemas' in C:\xampp\htdocs\epemas\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\epemas\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'epemas', 3306, '', 0)
+#1 C:\xampp\htdocs\epemas\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\epemas\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\epemas\system\Database\BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\xampp\htdocs\epemas\system\Database\BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\xampp\htdocs\epemas\app\Models\GroceryCrudModel.php(43): CodeIgniter\Database\BaseConnection->tableExists('orders')
+#6 C:\xampp\htdocs\epemas\app\Libraries\GroceryCrud.php(635): App\Models\GroceryCrudModel->db_table_exists('orders')
+#7 C:\xampp\htdocs\epemas\app\Libraries\GroceryCrud.php(4970): App\Libraries\grocery_CRUD_Model_Driver->table_exists('orders')
+#8 C:\xampp\htdocs\epemas\app\Libraries\GroceryCrud.php(4450): App\Libraries\GroceryCrud->get_table()
+#9 C:\xampp\htdocs\epemas\app\Libraries\GroceryCrud.php(4467): App\Libraries\GroceryCrud->pre_render()
+#10 C:\xampp\htdocs\epemas\app\Controllers\Examples.php(28): App\Libraries\GroceryCrud->render()
+#11 C:\xampp\htdocs\epemas\system\CodeIgniter.php(934): App\Controllers\Examples->orders_management()
+#12 C:\xampp\htdocs\epemas\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+#13 C:\xampp\htdocs\epemas\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 C:\xampp\htdocs\epemas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 C:\xampp\htdocs\epemas\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#16 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'epemas' in C:\xampp\htdocs\epemas\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\epemas\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\epemas\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\epemas\system\Database\BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\xampp\htdocs\epemas\system\Database\BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\xampp\htdocs\epemas\app\Models\GroceryCrudModel.php(43): CodeIgniter\Database\BaseConnection->tableExists('orders')
+#5 C:\xampp\htdocs\epemas\app\Libraries\GroceryCrud.php(635): App\Models\GroceryCrudModel->db_table_exists('orders')
+#6 C:\xampp\htdocs\epemas\app\Libraries\GroceryCrud.php(4970): App\Libraries\grocery_CRUD_Model_Driver->table_exists('orders')
+#7 C:\xampp\htdocs\epemas\app\Libraries\GroceryCrud.php(4450): App\Libraries\GroceryCrud->get_table()
+#8 C:\xampp\htdocs\epemas\app\Libraries\GroceryCrud.php(4467): App\Libraries\GroceryCrud->pre_render()
+#9 C:\xampp\htdocs\epemas\app\Controllers\Examples.php(28): App\Libraries\GroceryCrud->render()
+#10 C:\xampp\htdocs\epemas\system\CodeIgniter.php(934): App\Controllers\Examples->orders_management()
+#11 C:\xampp\htdocs\epemas\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+#12 C:\xampp\htdocs\epemas\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\epemas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp\htdocs\epemas\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2023-03-12 04:11:00 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'epemas'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FROM `epemas`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+ 4 APPPATH\Models\GroceryCrudModel.php(43): CodeIgniter\Database\BaseConnection->tableExists('orders')
+ 5 APPPATH\Libraries\GroceryCrud.php(635): App\Models\GroceryCrudModel->db_table_exists('orders')
+ 6 APPPATH\Libraries\GroceryCrud.php(4970): App\Libraries\grocery_CRUD_Model_Driver->table_exists('orders')
+ 7 APPPATH\Libraries\GroceryCrud.php(4450): App\Libraries\GroceryCrud->get_table()
+ 8 APPPATH\Libraries\GroceryCrud.php(4467): App\Libraries\GroceryCrud->pre_render()
+ 9 APPPATH\Controllers\Examples.php(28): App\Libraries\GroceryCrud->render()
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->orders_management()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:11:47 --> [DEPRECATED] strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 262.
+ 1 APPPATH\Libraries\GroceryCrud.php(262): strip_tags(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 3 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 4 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 5 APPPATH\Controllers\Examples.php(28): App\Libraries\GroceryCrud->render()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->orders_management()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:11:47 --> [DEPRECATED] strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 262.
+ 1 APPPATH\Libraries\GroceryCrud.php(262): strip_tags(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 3 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 4 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 5 APPPATH\Controllers\Examples.php(28): App\Libraries\GroceryCrud->render()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->orders_management()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:11:47 --> [DEPRECATED] strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 262.
+ 1 APPPATH\Libraries\GroceryCrud.php(262): strip_tags(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 3 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 4 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 5 APPPATH\Controllers\Examples.php(28): App\Libraries\GroceryCrud->render()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->orders_management()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:11:47 --> [DEPRECATED] strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 262.
+ 1 APPPATH\Libraries\GroceryCrud.php(262): strip_tags(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 3 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 4 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 5 APPPATH\Controllers\Examples.php(28): App\Libraries\GroceryCrud->render()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->orders_management()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:11:47 --> [DEPRECATED] strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 262.
+ 1 APPPATH\Libraries\GroceryCrud.php(262): strip_tags(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 3 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 4 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 5 APPPATH\Controllers\Examples.php(28): App\Libraries\GroceryCrud->render()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->orders_management()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:11:47 --> [DEPRECATED] strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 262.
+ 1 APPPATH\Libraries\GroceryCrud.php(262): strip_tags(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 3 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 4 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 5 APPPATH\Controllers\Examples.php(28): App\Libraries\GroceryCrud->render()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->orders_management()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:11:47 --> [DEPRECATED] strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 262.
+ 1 APPPATH\Libraries\GroceryCrud.php(262): strip_tags(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 3 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 4 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 5 APPPATH\Controllers\Examples.php(28): App\Libraries\GroceryCrud->render()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->orders_management()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:12:33 --> [DEPRECATED] strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 262.
+ 1 APPPATH\Libraries\GroceryCrud.php(262): strip_tags(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 3 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 4 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 5 APPPATH\Controllers\Examples.php(28): App\Libraries\GroceryCrud->render()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->orders_management()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:12:33 --> [DEPRECATED] strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 262.
+ 1 APPPATH\Libraries\GroceryCrud.php(262): strip_tags(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 3 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 4 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 5 APPPATH\Controllers\Examples.php(28): App\Libraries\GroceryCrud->render()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->orders_management()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:12:33 --> [DEPRECATED] strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 262.
+ 1 APPPATH\Libraries\GroceryCrud.php(262): strip_tags(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 3 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 4 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 5 APPPATH\Controllers\Examples.php(28): App\Libraries\GroceryCrud->render()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->orders_management()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:12:33 --> [DEPRECATED] strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 262.
+ 1 APPPATH\Libraries\GroceryCrud.php(262): strip_tags(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 3 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 4 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 5 APPPATH\Controllers\Examples.php(28): App\Libraries\GroceryCrud->render()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->orders_management()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:12:33 --> [DEPRECATED] strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 262.
+ 1 APPPATH\Libraries\GroceryCrud.php(262): strip_tags(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 3 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 4 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 5 APPPATH\Controllers\Examples.php(28): App\Libraries\GroceryCrud->render()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->orders_management()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:12:33 --> [DEPRECATED] strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 262.
+ 1 APPPATH\Libraries\GroceryCrud.php(262): strip_tags(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 3 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 4 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 5 APPPATH\Controllers\Examples.php(28): App\Libraries\GroceryCrud->render()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->orders_management()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:12:33 --> [DEPRECATED] strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 262.
+ 1 APPPATH\Libraries\GroceryCrud.php(262): strip_tags(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 3 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 4 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 5 APPPATH\Controllers\Examples.php(28): App\Libraries\GroceryCrud->render()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->orders_management()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:12:38 --> [DEPRECATED] strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 262.
+ 1 APPPATH\Libraries\GroceryCrud.php(262): strip_tags(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 3 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 4 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 5 APPPATH\Controllers\Examples.php(28): App\Libraries\GroceryCrud->render()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->orders_management()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:12:38 --> [DEPRECATED] strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 262.
+ 1 APPPATH\Libraries\GroceryCrud.php(262): strip_tags(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 3 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 4 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 5 APPPATH\Controllers\Examples.php(28): App\Libraries\GroceryCrud->render()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->orders_management()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:12:38 --> [DEPRECATED] strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 262.
+ 1 APPPATH\Libraries\GroceryCrud.php(262): strip_tags(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 3 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 4 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 5 APPPATH\Controllers\Examples.php(28): App\Libraries\GroceryCrud->render()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->orders_management()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:12:38 --> [DEPRECATED] strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 262.
+ 1 APPPATH\Libraries\GroceryCrud.php(262): strip_tags(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 3 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 4 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 5 APPPATH\Controllers\Examples.php(28): App\Libraries\GroceryCrud->render()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->orders_management()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:12:38 --> [DEPRECATED] strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 262.
+ 1 APPPATH\Libraries\GroceryCrud.php(262): strip_tags(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 3 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 4 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 5 APPPATH\Controllers\Examples.php(28): App\Libraries\GroceryCrud->render()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->orders_management()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:12:38 --> [DEPRECATED] strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 262.
+ 1 APPPATH\Libraries\GroceryCrud.php(262): strip_tags(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 3 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 4 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 5 APPPATH\Controllers\Examples.php(28): App\Libraries\GroceryCrud->render()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->orders_management()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:12:38 --> [DEPRECATED] strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 262.
+ 1 APPPATH\Libraries\GroceryCrud.php(262): strip_tags(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 3 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 4 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 5 APPPATH\Controllers\Examples.php(28): App\Libraries\GroceryCrud->render()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->orders_management()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:13:26 --> [DEPRECATED] strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 262.
+ 1 APPPATH\Libraries\GroceryCrud.php(262): strip_tags(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 3 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 4 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 5 APPPATH\Controllers\Examples.php(28): App\Libraries\GroceryCrud->render()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->orders_management()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:13:27 --> [DEPRECATED] strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 262.
+ 1 APPPATH\Libraries\GroceryCrud.php(262): strip_tags(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 3 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 4 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 5 APPPATH\Controllers\Examples.php(28): App\Libraries\GroceryCrud->render()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->orders_management()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:13:27 --> [DEPRECATED] strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 262.
+ 1 APPPATH\Libraries\GroceryCrud.php(262): strip_tags(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 3 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 4 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 5 APPPATH\Controllers\Examples.php(28): App\Libraries\GroceryCrud->render()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->orders_management()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:13:27 --> [DEPRECATED] strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 262.
+ 1 APPPATH\Libraries\GroceryCrud.php(262): strip_tags(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 3 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 4 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 5 APPPATH\Controllers\Examples.php(28): App\Libraries\GroceryCrud->render()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->orders_management()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:13:27 --> [DEPRECATED] strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 262.
+ 1 APPPATH\Libraries\GroceryCrud.php(262): strip_tags(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 3 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 4 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 5 APPPATH\Controllers\Examples.php(28): App\Libraries\GroceryCrud->render()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->orders_management()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:13:27 --> [DEPRECATED] strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 262.
+ 1 APPPATH\Libraries\GroceryCrud.php(262): strip_tags(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 3 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 4 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 5 APPPATH\Controllers\Examples.php(28): App\Libraries\GroceryCrud->render()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->orders_management()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:13:27 --> [DEPRECATED] strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 262.
+ 1 APPPATH\Libraries\GroceryCrud.php(262): strip_tags(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 3 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 4 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 5 APPPATH\Controllers\Examples.php(28): App\Libraries\GroceryCrud->render()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->orders_management()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:14:10 --> [DEPRECATED] strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 262.
+ 1 APPPATH\Libraries\GroceryCrud.php(262): strip_tags(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 3 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 4 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 5 APPPATH\Controllers\Examples.php(28): App\Libraries\GroceryCrud->render()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->orders_management()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:14:11 --> [DEPRECATED] strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 262.
+ 1 APPPATH\Libraries\GroceryCrud.php(262): strip_tags(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 3 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 4 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 5 APPPATH\Controllers\Examples.php(28): App\Libraries\GroceryCrud->render()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->orders_management()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:14:11 --> [DEPRECATED] strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 262.
+ 1 APPPATH\Libraries\GroceryCrud.php(262): strip_tags(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 3 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 4 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 5 APPPATH\Controllers\Examples.php(28): App\Libraries\GroceryCrud->render()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->orders_management()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:14:11 --> [DEPRECATED] strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 262.
+ 1 APPPATH\Libraries\GroceryCrud.php(262): strip_tags(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 3 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 4 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 5 APPPATH\Controllers\Examples.php(28): App\Libraries\GroceryCrud->render()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->orders_management()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:14:11 --> [DEPRECATED] strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 262.
+ 1 APPPATH\Libraries\GroceryCrud.php(262): strip_tags(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 3 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 4 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 5 APPPATH\Controllers\Examples.php(28): App\Libraries\GroceryCrud->render()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->orders_management()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:14:11 --> [DEPRECATED] strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 262.
+ 1 APPPATH\Libraries\GroceryCrud.php(262): strip_tags(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 3 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 4 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 5 APPPATH\Controllers\Examples.php(28): App\Libraries\GroceryCrud->render()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->orders_management()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:14:11 --> [DEPRECATED] strip_tags(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 262.
+ 1 APPPATH\Libraries\GroceryCrud.php(262): strip_tags(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 3 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 4 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 5 APPPATH\Controllers\Examples.php(28): App\Libraries\GroceryCrud->render()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->orders_management()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:14:33 --> [DEPRECATED] strlen(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 336.
+ 1 APPPATH\Libraries\GroceryCrud.php(336): strlen(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(315): App\Libraries\grocery_CRUD_Field_Types->character_limiter(null, 30, '...')
+ 3 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 4 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 5 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 6 APPPATH\Controllers\Examples.php(13): App\Libraries\GroceryCrud->render()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->customers_management()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:14:33 --> [DEPRECATED] strlen(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 336.
+ 1 APPPATH\Libraries\GroceryCrud.php(336): strlen(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(315): App\Libraries\grocery_CRUD_Field_Types->character_limiter(null, 30, '...')
+ 3 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 4 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 5 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 6 APPPATH\Controllers\Examples.php(13): App\Libraries\GroceryCrud->render()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->customers_management()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:14:33 --> [DEPRECATED] strlen(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 336.
+ 1 APPPATH\Libraries\GroceryCrud.php(336): strlen(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(315): App\Libraries\grocery_CRUD_Field_Types->character_limiter(null, 30, '...')
+ 3 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 4 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 5 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 6 APPPATH\Controllers\Examples.php(13): App\Libraries\GroceryCrud->render()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->customers_management()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:14:33 --> [DEPRECATED] strlen(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 336.
+ 1 APPPATH\Libraries\GroceryCrud.php(336): strlen(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(315): App\Libraries\grocery_CRUD_Field_Types->character_limiter(null, 30, '...')
+ 3 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 4 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 5 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 6 APPPATH\Controllers\Examples.php(13): App\Libraries\GroceryCrud->render()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->customers_management()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:14:33 --> [DEPRECATED] strlen(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 336.
+ 1 APPPATH\Libraries\GroceryCrud.php(336): strlen(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(315): App\Libraries\grocery_CRUD_Field_Types->character_limiter(null, 30, '...')
+ 3 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 4 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 5 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 6 APPPATH\Controllers\Examples.php(13): App\Libraries\GroceryCrud->render()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->customers_management()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:14:33 --> [DEPRECATED] strlen(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 336.
+ 1 APPPATH\Libraries\GroceryCrud.php(336): strlen(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(315): App\Libraries\grocery_CRUD_Field_Types->character_limiter(null, 30, '...')
+ 3 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 4 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 5 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 6 APPPATH\Controllers\Examples.php(13): App\Libraries\GroceryCrud->render()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->customers_management()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:14:33 --> [DEPRECATED] strlen(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 336.
+ 1 APPPATH\Libraries\GroceryCrud.php(336): strlen(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(315): App\Libraries\grocery_CRUD_Field_Types->character_limiter(null, 30, '...')
+ 3 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 4 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 5 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 6 APPPATH\Controllers\Examples.php(13): App\Libraries\GroceryCrud->render()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->customers_management()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:14:33 --> [DEPRECATED] strlen(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 336.
+ 1 APPPATH\Libraries\GroceryCrud.php(336): strlen(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(315): App\Libraries\grocery_CRUD_Field_Types->character_limiter(null, 30, '...')
+ 3 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 4 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 5 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 6 APPPATH\Controllers\Examples.php(13): App\Libraries\GroceryCrud->render()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->customers_management()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:14:33 --> [DEPRECATED] strlen(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 336.
+ 1 APPPATH\Libraries\GroceryCrud.php(336): strlen(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(315): App\Libraries\grocery_CRUD_Field_Types->character_limiter(null, 30, '...')
+ 3 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 4 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 5 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 6 APPPATH\Controllers\Examples.php(13): App\Libraries\GroceryCrud->render()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->customers_management()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:14:33 --> [DEPRECATED] strlen(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 336.
+ 1 APPPATH\Libraries\GroceryCrud.php(336): strlen(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(315): App\Libraries\grocery_CRUD_Field_Types->character_limiter(null, 30, '...')
+ 3 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 4 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 5 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 6 APPPATH\Controllers\Examples.php(13): App\Libraries\GroceryCrud->render()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->customers_management()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:14:33 --> [DEPRECATED] strlen(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 336.
+ 1 APPPATH\Libraries\GroceryCrud.php(336): strlen(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(315): App\Libraries\grocery_CRUD_Field_Types->character_limiter(null, 30, '...')
+ 3 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 4 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 5 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 6 APPPATH\Controllers\Examples.php(13): App\Libraries\GroceryCrud->render()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->customers_management()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:14:33 --> [DEPRECATED] strlen(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 336.
+ 1 APPPATH\Libraries\GroceryCrud.php(336): strlen(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(315): App\Libraries\grocery_CRUD_Field_Types->character_limiter(null, 30, '...')
+ 3 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 4 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 5 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 6 APPPATH\Controllers\Examples.php(13): App\Libraries\GroceryCrud->render()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->customers_management()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:14:33 --> [DEPRECATED] strlen(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 336.
+ 1 APPPATH\Libraries\GroceryCrud.php(336): strlen(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(315): App\Libraries\grocery_CRUD_Field_Types->character_limiter(null, 30, '...')
+ 3 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 4 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 5 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 6 APPPATH\Controllers\Examples.php(13): App\Libraries\GroceryCrud->render()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->customers_management()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-12 04:14:33 --> [DEPRECATED] strlen(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Libraries\GroceryCrud.php on line 336.
+ 1 APPPATH\Libraries\GroceryCrud.php(336): strlen(null)
+ 2 APPPATH\Libraries\GroceryCrud.php(315): App\Libraries\grocery_CRUD_Field_Types->character_limiter(null, 30, '...')
+ 3 APPPATH\Libraries\GroceryCrud.php(1746): App\Libraries\grocery_CRUD_Field_Types->change_list_value(Object(stdClass), null)
+ 4 APPPATH\Libraries\GroceryCrud.php(1504): App\Libraries\grocery_CRUD_Layout->change_list([...], [...])
+ 5 APPPATH\Libraries\GroceryCrud.php(4496): App\Libraries\grocery_CRUD_Layout->showList(false, Object(stdClass))
+ 6 APPPATH\Controllers\Examples.php(13): App\Libraries\GroceryCrud->render()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Examples->customers_management()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Examples))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 04:27:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 04:27:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-12 04:29:08 --> mysqli_sql_exception: Table 'tescrud.masyarakat' doesn't exist in C:\xampp\htdocs\epemas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\epemas\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\epemas\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\epemas\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\epemas\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\epemas\app\Models\UserModel.php(99): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\epemas\app\Controllers\Login.php(82): App\Models\UserModel->verify_user('tfsid', '$2y$10$JxOWE84j...')
+#6 C:\xampp\htdocs\epemas\system\CodeIgniter.php(934): App\Controllers\Login->auth()
+#7 C:\xampp\htdocs\epemas\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\xampp\htdocs\epemas\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\epemas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\epemas\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-03-12 04:29:08 --> Table 'tescrud.masyarakat' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `masyarakat`
+WHERE `Username` = :Username:
+AND `Password` = :Password:', [...], false)
+ 2 APPPATH\Models\UserModel.php(99): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Login.php(82): App\Models\UserModel->verify_user('tfsid', '$2y$10$JxOWE84jWkMkkm6a6EMqDe3/r')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->auth()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 04:30:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 04:30:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 04:30:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 04:30:23 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\Database\MySQLi\Result given, called in C:\xampp\htdocs\epemas\app\Controllers\User.php on line 31
+in SYSTEMPATH\Common.php on line 1163.
+ 1 APPPATH\Controllers\User.php(31): view('form_pengaduan', Object(CodeIgniter\Database\MySQLi\Result))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 04:31:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 04:31:02 --> Call to undefined method CodeIgniter\View\View::session()
+in APPPATH\Views\form_pengaduan.php on line 36.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 4 APPPATH\Controllers\User.php(31): view('form_pengaduan')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 04:31:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 04:31:11 --> Call to undefined method CodeIgniter\View\View::session()
+in APPPATH\Views\form_pengaduan.php on line 36.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 4 APPPATH\Controllers\User.php(31): view('form_pengaduan')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 04:31:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 04:31:13 --> Call to undefined method CodeIgniter\View\View::session()
+in APPPATH\Views\form_pengaduan.php on line 36.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 4 APPPATH\Controllers\User.php(31): view('form_pengaduan')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 04:31:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 04:31:15 --> Call to undefined method CodeIgniter\View\View::session()
+in APPPATH\Views\form_pengaduan.php on line 36.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 4 APPPATH\Controllers\User.php(31): view('form_pengaduan')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 04:31:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 04:31:17 --> Call to undefined method CodeIgniter\View\View::session()
+in APPPATH\Views\form_pengaduan.php on line 36.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 4 APPPATH\Controllers\User.php(31): view('form_pengaduan')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 04:31:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 04:31:27 --> Call to undefined method CodeIgniter\View\View::session()
+in APPPATH\Views\form_pengaduan.php on line 36.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 4 APPPATH\Controllers\User.php(31): view('form_pengaduan')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 04:32:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 04:32:26 --> Trying to access array offset on value of type null
+in APPPATH\Views\form_pengaduan.php on line 36.
+ 1 APPPATH\Views\form_pengaduan.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\form_pengaduan.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\form_pengaduan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 5 APPPATH\Controllers\User.php(31): view('form_pengaduan')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 04:32:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 05:34:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 05:34:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 05:34:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 05:37:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 05:40:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 05:40:17 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\form_pengaduan.php on line 40.
+ 1 APPPATH\Views\form_pengaduan.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH\\Views\\form_pengaduan.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\form_pengaduan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 5 APPPATH\Controllers\User.php(46): view('form_pengaduan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 05:40:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 05:40:48 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\form_pengaduan.php on line 40.
+ 1 APPPATH\Views\form_pengaduan.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH\\Views\\form_pengaduan.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\form_pengaduan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 5 APPPATH\Controllers\User.php(46): view('form_pengaduan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 05:41:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 05:41:06 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\form_pengaduan.php on line 40.
+ 1 APPPATH\Views\form_pengaduan.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH\\Views\\form_pengaduan.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\form_pengaduan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 5 APPPATH\Controllers\User.php(46): view('form_pengaduan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 05:41:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 05:41:29 --> syntax error, unexpected token "echo"
+in APPPATH\Views\form_pengaduan.php on line 46.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 3 APPPATH\Controllers\User.php(46): view('form_pengaduan', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 05:41:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 05:41:46 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\form_pengaduan.php on line 40.
+ 1 APPPATH\Views\form_pengaduan.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH\\Views\\form_pengaduan.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\form_pengaduan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 5 APPPATH\Controllers\User.php(46): view('form_pengaduan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 05:42:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 05:42:11 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\form_pengaduan.php on line 40.
+ 1 APPPATH\Views\form_pengaduan.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH\\Views\\form_pengaduan.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\form_pengaduan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 5 APPPATH\Controllers\User.php(46): view('form_pengaduan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 05:43:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 05:43:45 --> Cannot access offset of type string on string
+in APPPATH\Views\form_pengaduan.php on line 46.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 4 APPPATH\Controllers\User.php(46): view('form_pengaduan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 05:43:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 05:43:59 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\form_pengaduan.php on line 40.
+ 1 APPPATH\Views\form_pengaduan.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH\\Views\\form_pengaduan.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\form_pengaduan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 5 APPPATH\Controllers\User.php(46): view('form_pengaduan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 05:44:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 05:44:00 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\form_pengaduan.php on line 40.
+ 1 APPPATH\Views\form_pengaduan.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH\\Views\\form_pengaduan.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\form_pengaduan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 5 APPPATH\Controllers\User.php(46): view('form_pengaduan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 05:44:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 05:44:01 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\form_pengaduan.php on line 40.
+ 1 APPPATH\Views\form_pengaduan.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH\\Views\\form_pengaduan.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\form_pengaduan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 5 APPPATH\Controllers\User.php(46): view('form_pengaduan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 05:44:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 05:44:13 --> Cannot access offset of type string on string
+in APPPATH\Views\form_pengaduan.php on line 46.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 4 APPPATH\Controllers\User.php(46): view('form_pengaduan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 05:44:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 05:46:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 05:47:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 05:47:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 05:49:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 05:51:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 05:51:51 --> Undefined property: App\Libraries\GroceryCrud::$db
+in APPPATH\Controllers\User.php on line 33.
+ 1 APPPATH\Controllers\User.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Libraries\\GroceryCrud::$db', 'APPPATH\\Controllers\\User.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 05:52:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 05:52:42 --> Undefined property: App\Controllers\User::$db
+in APPPATH\Controllers\User.php on line 33.
+ 1 APPPATH\Controllers\User.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\User::$db', 'APPPATH\\Controllers\\User.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 05:53:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 05:53:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 05:55:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 05:55:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 05:58:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 05:58:03 --> Too few arguments to function App\Models\UserModel::getUserById(), 0 passed in C:\xampp\htdocs\epemas\app\Controllers\User.php on line 31 and exactly 1 expected
+in APPPATH\Models\UserModel.php on line 111.
+ 1 APPPATH\Controllers\User.php(31): App\Models\UserModel->getUserById()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 05:58:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 05:58:17 --> Undefined variable $css_files
+in APPPATH\Views\form_pengaduan.php on line 10.
+ 1 APPPATH\Views\form_pengaduan.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $css_files', 'APPPATH\\Views\\form_pengaduan.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\form_pengaduan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 5 APPPATH\Controllers\User.php(50): view('form_pengaduan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 05:58:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 05:58:32 --> Undefined variable $output
+in APPPATH\Views\form_pengaduan.php on line 37.
+ 1 APPPATH\Views\form_pengaduan.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $output', 'APPPATH\\Views\\form_pengaduan.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\form_pengaduan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 5 APPPATH\Controllers\User.php(50): view('form_pengaduan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 05:58:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 05:58:44 --> Undefined variable $data
+in APPPATH\Views\form_pengaduan.php on line 37.
+ 1 APPPATH\Views\form_pengaduan.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\form_pengaduan.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\form_pengaduan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 5 APPPATH\Controllers\User.php(50): view('form_pengaduan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 05:59:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 05:59:08 --> Undefined variable $data
+in APPPATH\Views\form_pengaduan.php on line 37.
+ 1 APPPATH\Views\form_pengaduan.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\form_pengaduan.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\form_pengaduan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 5 APPPATH\Controllers\User.php(50): view('form_pengaduan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 05:59:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 05:59:27 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\Database\MySQLi\Result given, called in C:\xampp\htdocs\epemas\app\Controllers\User.php on line 50
+in SYSTEMPATH\Common.php on line 1163.
+ 1 APPPATH\Controllers\User.php(50): view('form_pengaduan', Object(CodeIgniter\Database\MySQLi\Result))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 05:59:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 05:59:46 --> Undefined variable $data
+in APPPATH\Views\form_pengaduan.php on line 37.
+ 1 APPPATH\Views\form_pengaduan.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\form_pengaduan.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\form_pengaduan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 5 APPPATH\Controllers\User.php(50): view('form_pengaduan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 06:03:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 06:03:03 --> Undefined variable $data
+in APPPATH\Views\form_pengaduan.php on line 37.
+ 1 APPPATH\Views\form_pengaduan.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\form_pengaduan.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\form_pengaduan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 5 APPPATH\Controllers\User.php(52): view('form_pengaduan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 06:03:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 06:03:17 --> Undefined variable $data
+in APPPATH\Views\form_pengaduan.php on line 37.
+ 1 APPPATH\Views\form_pengaduan.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\form_pengaduan.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\form_pengaduan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 5 APPPATH\Controllers\User.php(52): view('form_pengaduan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 06:03:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 06:03:19 --> Undefined variable $data
+in APPPATH\Views\form_pengaduan.php on line 37.
+ 1 APPPATH\Views\form_pengaduan.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\form_pengaduan.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\form_pengaduan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 5 APPPATH\Controllers\User.php(52): view('form_pengaduan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 06:04:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 06:04:24 --> Undefined variable $data
+in APPPATH\Views\form_pengaduan.php on line 37.
+ 1 APPPATH\Views\form_pengaduan.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\form_pengaduan.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\form_pengaduan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 5 APPPATH\Controllers\User.php(52): view('form_pengaduan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 06:04:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 06:04:27 --> Undefined variable $data
+in APPPATH\Views\form_pengaduan.php on line 37.
+ 1 APPPATH\Views\form_pengaduan.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\form_pengaduan.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\form_pengaduan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 5 APPPATH\Controllers\User.php(52): view('form_pengaduan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 06:05:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 06:05:30 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getArray()
+in APPPATH\Models\UserModel.php on line 118.
+ 1 APPPATH\Controllers\User.php(31): App\Models\UserModel->getUserById('tfsid')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 06:05:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 06:05:52 --> Undefined variable $data
+in APPPATH\Views\form_pengaduan.php on line 37.
+ 1 APPPATH\Views\form_pengaduan.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\form_pengaduan.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\form_pengaduan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 5 APPPATH\Controllers\User.php(52): view('form_pengaduan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 06:06:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 06:06:05 --> Undefined variable $data
+in APPPATH\Views\form_pengaduan.php on line 37.
+ 1 APPPATH\Views\form_pengaduan.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\form_pengaduan.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\form_pengaduan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 5 APPPATH\Controllers\User.php(52): view('form_pengaduan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 06:11:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 06:12:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 06:12:07 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\form_pengaduan.php on line 37.
+ 1 APPPATH\Views\form_pengaduan.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH\\Views\\form_pengaduan.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\form_pengaduan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 5 APPPATH\Controllers\User.php(62): view('form_pengaduan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 06:12:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 06:13:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 06:13:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 06:14:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 06:15:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 06:17:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 06:17:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 06:17:49 --> Cannot access offset of type string on string
+in APPPATH\Views\form_pengaduan.php on line 38.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 4 APPPATH\Controllers\User.php(67): view('form_pengaduan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 06:17:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 06:17:56 --> Cannot access offset of type string on string
+in APPPATH\Views\form_pengaduan.php on line 38.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 4 APPPATH\Controllers\User.php(67): view('form_pengaduan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 06:18:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 06:18:15 --> syntax error, unexpected token "(array)"
+in APPPATH\Views\form_pengaduan.php on line 37.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 3 APPPATH\Controllers\User.php(67): view('form_pengaduan', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 06:18:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 06:18:22 --> Cannot access offset of type string on string
+in APPPATH\Views\form_pengaduan.php on line 38.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 4 APPPATH\Controllers\User.php(67): view('form_pengaduan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 06:18:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 06:23:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 06:23:33 --> Undefined variable $output
+in APPPATH\Controllers\User.php on line 55.
+ 1 APPPATH\Controllers\User.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $output', 'APPPATH\\Controllers\\User.php', 55)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 06:31:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 06:31:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 06:32:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 06:32:01 --> Too few arguments to function App\Models\UserModel::getUserById(), 0 passed in C:\xampp\htdocs\epemas\app\Controllers\User.php on line 51 and exactly 1 expected
+in APPPATH\Models\UserModel.php on line 111.
+ 1 APPPATH\Controllers\User.php(51): App\Models\UserModel->getUserById()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 06:32:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 06:32:44 --> Undefined variable $data
+in APPPATH\Views\form_pengaduan.php on line 37.
+ 1 APPPATH\Views\form_pengaduan.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\form_pengaduan.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\form_pengaduan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 5 APPPATH\Controllers\User.php(55): view('form_pengaduan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 06:33:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 06:33:11 --> Undefined variable $data
+in APPPATH\Views\form_pengaduan.php on line 37.
+ 1 APPPATH\Views\form_pengaduan.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\form_pengaduan.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\form_pengaduan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 5 APPPATH\Controllers\User.php(55): view('form_pengaduan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 06:34:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 06:34:29 --> Cannot use object of type mysqli as array
+in APPPATH\Views\form_pengaduan.php on line 38.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 4 APPPATH\Controllers\User.php(55): view('form_pengaduan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 06:34:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 06:34:49 --> Array to string conversion
+in APPPATH\Views\form_pengaduan.php on line 38.
+ 1 APPPATH\Views\form_pengaduan.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\form_pengaduan.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\form_pengaduan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 5 APPPATH\Controllers\User.php(55): view('form_pengaduan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 06:36:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 06:36:13 --> Cannot use object of type mysqli as array
+in APPPATH\Views\form_pengaduan.php on line 38.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 4 APPPATH\Controllers\User.php(55): view('form_pengaduan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 06:38:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 06:38:11 --> Cannot use object of type mysqli as array
+in APPPATH\Views\form_pengaduan.php on line 38.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 4 APPPATH\Controllers\User.php(55): view('form_pengaduan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 06:38:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 06:38:18 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+in APPPATH\Views\form_pengaduan.php on line 38.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 4 APPPATH\Controllers\User.php(55): view('form_pengaduan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 06:39:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 06:39:14 --> Cannot use object of type mysqli as array
+in APPPATH\Views\form_pengaduan.php on line 38.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 4 APPPATH\Controllers\User.php(55): view('form_pengaduan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 07:02:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 07:02:09 --> Cannot use object of type mysqli as array
+in APPPATH\Views\form_pengaduan.php on line 38.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 4 APPPATH\Controllers\User.php(55): view('form_pengaduan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 07:02:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 07:02:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 07:02:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 07:02:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 07:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 07:13:41 --> Cannot use object of type mysqli as array
+in APPPATH\Views\form_pengaduan.php on line 38.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 4 APPPATH\Controllers\User.php(55): view('form_pengaduan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 07:14:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 07:26:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 07:30:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 07:30:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 07:30:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 07:30:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 07:45:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 07:45:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 07:45:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 07:45:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 07:45:31 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result_array()
+in APPPATH\Models\UserModel.php on line 120.
+ 1 APPPATH\Controllers\User.php(45): App\Models\UserModel->getUserById('tfsid')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 07:49:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 07:49:14 --> Too few arguments to function App\Models\UserModel::getUserById(), 0 passed in C:\xampp\htdocs\epemas\app\Controllers\User.php on line 65 and exactly 1 expected
+in APPPATH\Models\UserModel.php on line 111.
+ 1 APPPATH\Controllers\User.php(65): App\Models\UserModel->getUserById()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 07:49:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 07:49:37 --> Too few arguments to function App\Models\UserModel::getUserById(), 0 passed in C:\xampp\htdocs\epemas\app\Controllers\User.php on line 65 and exactly 1 expected
+in APPPATH\Models\UserModel.php on line 111.
+ 1 APPPATH\Controllers\User.php(65): App\Models\UserModel->getUserById()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 07:49:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 07:49:39 --> Too few arguments to function App\Models\UserModel::getUserById(), 0 passed in C:\xampp\htdocs\epemas\app\Controllers\User.php on line 65 and exactly 1 expected
+in APPPATH\Models\UserModel.php on line 111.
+ 1 APPPATH\Controllers\User.php(65): App\Models\UserModel->getUserById()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 07:49:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 07:49:41 --> Too few arguments to function App\Models\UserModel::getUserById(), 0 passed in C:\xampp\htdocs\epemas\app\Controllers\User.php on line 65 and exactly 1 expected
+in APPPATH\Models\UserModel.php on line 111.
+ 1 APPPATH\Controllers\User.php(65): App\Models\UserModel->getUserById()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 07:49:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 07:50:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 07:51:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 07:53:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 07:53:40 --> Undefined property: CodeIgniter\View\View::$db
+in APPPATH\Views\form_pengaduan.php on line 45.
+ 1 APPPATH\Views\form_pengaduan.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$db', 'APPPATH\\Views\\form_pengaduan.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\form_pengaduan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 5 APPPATH\Controllers\User.php(69): view('form_pengaduan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->pengaduan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 07:55:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 07:55:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 07:55:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 07:56:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 07:57:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 08:01:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 08:01:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 08:03:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-12 08:08:21 --> mysqli_sql_exception: Unknown column 'subjek' in 'field list' in C:\xampp\htdocs\epemas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\epemas\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\epemas\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\epemas\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\epemas\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\epemas\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\epemas\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\epemas\system\Model.php(729): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\epemas\app\Controllers\User.php(103): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\epemas\system\CodeIgniter.php(934): App\Controllers\User->kirim_pengaduan()
+#9 C:\xampp\htdocs\epemas\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#10 C:\xampp\htdocs\epemas\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\epemas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\epemas\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-03-12 08:08:21 --> Unknown column 'subjek' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pengaduan` (`subjek`, `isi_laporan`) VALUES (:subjek:, :isi_laporan:)', [...], false)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\User.php(103): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->kirim_pengaduan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 08:10:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-12 08:10:35 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`epemas`.`pengaduan`, CONSTRAINT `nik` FOREIGN KEY (`nik`) REFERENCES `masyarakat` (`nik`)) in C:\xampp\htdocs\epemas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\epemas\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\epemas\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\epemas\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\epemas\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\epemas\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\epemas\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\epemas\system\Model.php(729): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\epemas\app\Controllers\User.php(103): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\epemas\system\CodeIgniter.php(934): App\Controllers\User->kirim_pengaduan()
+#9 C:\xampp\htdocs\epemas\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#10 C:\xampp\htdocs\epemas\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\epemas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\epemas\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-03-12 08:10:35 --> Cannot add or update a child row: a foreign key constraint fails (`epemas`.`pengaduan`, CONSTRAINT `nik` FOREIGN KEY (`nik`) REFERENCES `masyarakat` (`nik`))
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pengaduan` (`isi_laporan`) VALUES (:isi_laporan:)', [...], false)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\User.php(103): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->kirim_pengaduan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 08:11:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 08:11:38 --> Undefined variable $db
+in APPPATH\Controllers\User.php on line 107.
+ 1 APPPATH\Controllers\User.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'APPPATH\\Controllers\\User.php', 107)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->kirim_pengaduan()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 08:23:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 08:23:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 08:23:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 08:23:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 08:23:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-12 08:23:49 --> Undefined variable $query
+in APPPATH\Models\PengaduanModel.php on line 51.
+ 1 APPPATH\Models\PengaduanModel.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $query', 'APPPATH\\Models\\PengaduanModel.php', 51)
+ 2 APPPATH\Controllers\User.php(102): App\Models\PengaduanModel->kirim_pengaduan([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->kirim_pengaduan()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-12 08:24:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 08:26:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 08:28:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 08:28:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 08:30:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 08:32:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 08:32:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 08:33:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 08:41:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 08:41:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 08:41:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 08:41:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 08:43:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 08:44:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 08:46:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 08:49:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 08:49:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 08:49:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-12 09:17:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

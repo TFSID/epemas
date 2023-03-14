@@ -1,0 +1,10 @@
+<?php print_r($siswa); ?>
+  <?php $i = 0; while ($i < count($siswa)) { ?>
+    <tr>
+
+      <td><?php echo $siswa[$i]['username']; ?></td>
+      <td><?php echo $siswa[$i]['email']; ?></td>
+      <td><?php echo $siswa[$i]['NIS']; ?></td>
+      
+    </tr>
+    <?php $i++;} ?>

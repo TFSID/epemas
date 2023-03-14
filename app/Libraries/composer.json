@@ -1,0 +1,5 @@
+{
+    "require": {
+        "irsyadulibad/codeigniter4-datatables": "*"
+    }
+}

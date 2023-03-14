@@ -1,0 +1,764 @@
+CRITICAL - 2023-02-23 00:58:15 --> Undefined property: App\Controllers\Login::$load
+in APPPATH\Controllers\Login.php on line 32.
+ 1 APPPATH\Controllers\Login.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Login::$load', 'APPPATH\\Controllers\\Login.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->verify()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-23 01:00:53 --> Undefined property: App\Controllers\Login::$load
+in APPPATH\Controllers\Login.php on line 32.
+ 1 APPPATH\Controllers\Login.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Login::$load', 'APPPATH\\Controllers\\Login.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->verify()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-23 01:01:28 --> Undefined property: App\Controllers\Login::$load
+in APPPATH\Controllers\Login.php on line 32.
+ 1 APPPATH\Controllers\Login.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Login::$load', 'APPPATH\\Controllers\\Login.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->verify()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-23 01:06:55 --> Undefined property: App\Controllers\Login::$load
+in APPPATH\Controllers\Login.php on line 38.
+ 1 APPPATH\Controllers\Login.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Login::$load', 'APPPATH\\Controllers\\Login.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->verify()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-23 01:19:30 --> Undefined property: App\Controllers\Login::$load
+in APPPATH\Controllers\Login.php on line 39.
+ 1 APPPATH\Controllers\Login.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Login::$load', 'APPPATH\\Controllers\\Login.php', 39)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->verify()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-23 01:26:47 --> Class "App\Controllers\UserModel" not found
+in APPPATH\Controllers\Login.php on line 86.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-23 01:27:23 --> Undefined property: App\Controllers\Login::$input
+in APPPATH\Controllers\Login.php on line 41.
+ 1 APPPATH\Controllers\Login.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Login::$input', 'APPPATH\\Controllers\\Login.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->verify()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-23 01:28:42 --> Undefined property: App\Controllers\Login::$input
+in APPPATH\Controllers\Login.php on line 41.
+ 1 APPPATH\Controllers\Login.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Login::$input', 'APPPATH\\Controllers\\Login.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->verify()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-23 01:28:47 --> Undefined property: App\Controllers\Login::$input
+in APPPATH\Controllers\Login.php on line 41.
+ 1 APPPATH\Controllers\Login.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Login::$input', 'APPPATH\\Controllers\\Login.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->verify()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-23 01:29:45 --> Undefined property: App\Controllers\Login::$input
+in APPPATH\Controllers\Login.php on line 41.
+ 1 APPPATH\Controllers\Login.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Login::$input', 'APPPATH\\Controllers\\Login.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->verify()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-23 01:29:56 --> Undefined property: App\Controllers\Login::$input
+in APPPATH\Controllers\Login.php on line 41.
+ 1 APPPATH\Controllers\Login.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Login::$input', 'APPPATH\\Controllers\\Login.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->verify()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-23 01:31:08 --> Undefined property: App\Controllers\Login::$input
+in APPPATH\Controllers\Login.php on line 41.
+ 1 APPPATH\Controllers\Login.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Login::$input', 'APPPATH\\Controllers\\Login.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->verify()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-23 01:31:24 --> Class "App\Controllers\UserModel" not found
+in APPPATH\Controllers\Login.php on line 86.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-23 01:32:31 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp2\htdocs\epemas\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp2\htdocs\epemas\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', '', '', 'e_pemas', 3306, '', 0)
+#1 C:\xampp2\htdocs\epemas\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp2\htdocs\epemas\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp2\htdocs\epemas\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp2\htdocs\epemas\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2\htdocs\epemas\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp2\htdocs\epemas\app\Controllers\Login.php(92): CodeIgniter\BaseModel->first()
+#7 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(934): App\Controllers\Login->auth()
+#8 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp2\htdocs\epemas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp2\htdocs\epemas\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp2\htdocs\epemas\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp2\htdocs\epemas\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp2\htdocs\epemas\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp2\htdocs\epemas\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp2\htdocs\epemas\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp2\htdocs\epemas\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 C:\xampp2\htdocs\epemas\app\Controllers\Login.php(92): CodeIgniter\BaseModel->first()
+#6 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(934): App\Controllers\Login->auth()
+#7 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2\htdocs\epemas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp2\htdocs\epemas\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#11 {main}
+CRITICAL - 2023-02-23 01:32:31 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `username` = :username:
+AND `password` = :password:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Login.php(92): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->auth()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-23 01:32:39 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp2\htdocs\epemas\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp2\htdocs\epemas\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', '', '', 'e_pemas', 3306, '', 0)
+#1 C:\xampp2\htdocs\epemas\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp2\htdocs\epemas\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp2\htdocs\epemas\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp2\htdocs\epemas\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2\htdocs\epemas\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp2\htdocs\epemas\app\Controllers\Login.php(92): CodeIgniter\BaseModel->first()
+#7 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(934): App\Controllers\Login->auth()
+#8 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp2\htdocs\epemas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp2\htdocs\epemas\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp2\htdocs\epemas\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp2\htdocs\epemas\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp2\htdocs\epemas\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp2\htdocs\epemas\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp2\htdocs\epemas\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp2\htdocs\epemas\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 C:\xampp2\htdocs\epemas\app\Controllers\Login.php(92): CodeIgniter\BaseModel->first()
+#6 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(934): App\Controllers\Login->auth()
+#7 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2\htdocs\epemas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp2\htdocs\epemas\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#11 {main}
+CRITICAL - 2023-02-23 01:32:39 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `username` = :username:
+AND `password` = :password:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Login.php(92): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->auth()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-23 01:33:08 --> Error connecting to the database: ErrorException: mysqli::real_connect(): php_network_getaddresses: getaddrinfo for root failed: No such host is known.  in C:\xampp2\htdocs\epemas\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp2\\htdoc...', 174)
+#1 C:\xampp2\htdocs\epemas\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('root', '', '', 'e_pemas', 3306, '', 0)
+#2 C:\xampp2\htdocs\epemas\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp2\htdocs\epemas\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp2\htdocs\epemas\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp2\htdocs\epemas\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp2\htdocs\epemas\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#7 C:\xampp2\htdocs\epemas\app\Controllers\Login.php(92): CodeIgniter\BaseModel->first()
+#8 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(934): App\Controllers\Login->auth()
+#9 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#10 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp2\htdocs\epemas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp2\htdocs\epemas\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#13 {main}
+
+Next mysqli_sql_exception: php_network_getaddresses: getaddrinfo for root failed: No such host is known.  in C:\xampp2\htdocs\epemas\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp2\htdocs\epemas\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('root', '', '', 'e_pemas', 3306, '', 0)
+#1 C:\xampp2\htdocs\epemas\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp2\htdocs\epemas\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp2\htdocs\epemas\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp2\htdocs\epemas\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2\htdocs\epemas\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp2\htdocs\epemas\app\Controllers\Login.php(92): CodeIgniter\BaseModel->first()
+#7 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(934): App\Controllers\Login->auth()
+#8 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp2\htdocs\epemas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp2\htdocs\epemas\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: php_network_getaddresses: getaddrinfo for root failed: No such host is known.  in C:\xampp2\htdocs\epemas\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp2\htdocs\epemas\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp2\htdocs\epemas\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp2\htdocs\epemas\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp2\htdocs\epemas\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp2\htdocs\epemas\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 C:\xampp2\htdocs\epemas\app\Controllers\Login.php(92): CodeIgniter\BaseModel->first()
+#6 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(934): App\Controllers\Login->auth()
+#7 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2\htdocs\epemas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp2\htdocs\epemas\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#11 {main}
+CRITICAL - 2023-02-23 01:33:08 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo for root failed: No such host is known. 
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `username` = :username:
+AND `password` = :password:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Login.php(92): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->auth()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-23 01:33:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 01:39:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 01:40:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 01:40:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 01:41:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 02:05:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-23 02:08:13 --> Class "CI_Model" not found
+in APPPATH\Models\Login_model.php on line 1.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\Login_model.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Login_model')
+ 4 APPPATH\Controllers\Login.php(89): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Login_model')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->auth()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-23 02:10:42 --> Undefined variable $userModel
+in APPPATH\Controllers\Login.php on line 90.
+ 1 APPPATH\Controllers\Login.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userModel', 'APPPATH\\Controllers\\Login.php', 90)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-23 02:11:25 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(641): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(831): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Login.php(90): CodeIgniter\Model->__call('where', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->auth()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-23 02:13:11 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(641): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(831): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Login.php(141): CodeIgniter\Model->__call('where', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->auth()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-23 02:19:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 02:20:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 02:24:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 02:24:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 02:27:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 02:28:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-23 02:28:18 --> Undefined property: App\Controllers\Login::$db
+in APPPATH\Controllers\Login.php on line 103.
+ 1 APPPATH\Controllers\Login.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Login::$db', 'APPPATH\\Controllers\\Login.php', 103)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-23 02:28:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-23 02:28:54 --> Undefined variable $db
+in APPPATH\Controllers\Login.php on line 103.
+ 1 APPPATH\Controllers\Login.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'APPPATH\\Controllers\\Login.php', 103)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-23 02:31:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 02:31:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 02:32:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-23 02:32:32 --> The route for "dashboard" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('dashboard')
+ 2 SYSTEMPATH\Common.php(869): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Login.php(100): redirect('dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->auth()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-23 02:34:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 02:34:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 02:35:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 02:39:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 02:40:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 02:42:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 02:43:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 02:44:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 02:45:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-23 02:45:42 --> Call to undefined function App\Controllers\Login()
+in APPPATH\Controllers\Login.php on line 101.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-23 02:46:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 02:47:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-02-23 03:44:38 --> mysqli_sql_exception: Unknown column 'email' in 'field list' in C:\xampp2\htdocs\epemas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\epemas\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp2\htdocs\epemas\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp2\htdocs\epemas\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp2\htdocs\epemas\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp2\htdocs\epemas\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\epemas\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\epemas\system\Model.php(729): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp2\htdocs\epemas\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp2\htdocs\epemas\app\Controllers\Register.php(77): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(934): App\Controllers\Register->validation()
+#10 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#11 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\epemas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp2\htdocs\epemas\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#14 {main}
+CRITICAL - 2023-02-23 03:44:38 --> Unknown column 'email' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`username`, `email`, `password`) VALUES (:username:, :email:, :password:)', [...], false)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Register.php(77): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Register->validation()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-23 03:46:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 03:46:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 03:47:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 03:49:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 03:50:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 03:50:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 03:51:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 03:52:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-02-23 03:53:55 --> mysqli_sql_exception: Duplicate entry '0' for key 'fk_NIK' in C:\xampp2\htdocs\epemas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\epemas\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp2\htdocs\epemas\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp2\htdocs\epemas\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp2\htdocs\epemas\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp2\htdocs\epemas\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\epemas\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\epemas\system\Model.php(729): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp2\htdocs\epemas\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp2\htdocs\epemas\app\Controllers\Register.php(77): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(934): App\Controllers\Register->validation()
+#10 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#11 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\epemas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp2\htdocs\epemas\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#14 {main}
+CRITICAL - 2023-02-23 03:53:55 --> Duplicate entry '0' for key 'fk_NIK'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`username`, `email`, `password`) VALUES (:username:, :email:, :password:)', [...], false)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Register.php(77): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Register->validation()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-23 03:56:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 03:56:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 03:59:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 03:59:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-02-23 04:02:22 --> mysqli_sql_exception: Duplicate entry '' for key 'PRIMARY' in C:\xampp2\htdocs\epemas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\epemas\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp2\htdocs\epemas\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp2\htdocs\epemas\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp2\htdocs\epemas\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp2\htdocs\epemas\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\epemas\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\epemas\system\Model.php(729): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp2\htdocs\epemas\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp2\htdocs\epemas\app\Controllers\Register.php(77): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(934): App\Controllers\Register->validation()
+#10 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#11 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\epemas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp2\htdocs\epemas\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#14 {main}
+CRITICAL - 2023-02-23 04:02:22 --> Duplicate entry '' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`username`, `email`, `password`) VALUES (:username:, :email:, :password:)', [...], false)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Register.php(77): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Register->validation()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-23 04:02:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 04:02:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 04:03:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 04:03:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 04:04:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 04:04:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 04:04:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-23 04:04:58 --> password_hash() expects at least 2 arguments, 1 given
+in APPPATH\Controllers\Login.php on line 89.
+ 1 APPPATH\Controllers\Login.php(89): password_hash('345')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-23 04:05:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 04:06:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 04:06:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-23 04:50:39 --> Call to undefined function form_submit()
+in APPPATH\Views\form_pengaduan.php on line 87.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('form_pengaduan', [], true)
+ 4 APPPATH\Controllers\Home.php(20): view('form_pengaduan')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->pengaduan()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-23 06:43:26 --> mysqli_sql_exception: Unknown column 'email' in 'field list' in C:\xampp2\htdocs\epemas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\epemas\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\xampp2\htdocs\epemas\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\xampp2\htdocs\epemas\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\xampp2\htdocs\epemas\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\xampp2\htdocs\epemas\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\epemas\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\epemas\system\Model.php(729): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp2\htdocs\epemas\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp2\htdocs\epemas\app\Controllers\Register.php(83): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(934): App\Controllers\Register->validation()
+#10 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#11 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\epemas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp2\htdocs\epemas\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#14 {main}
+CRITICAL - 2023-02-23 06:43:26 --> Unknown column 'email' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `masyarakat` (`username`, `tlpn`, `email`, `password`) VALUES (:username:, :tlpn:, :email:, :password:)', [...], false)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Register.php(83): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Register->validation()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-23 06:44:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 06:44:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-02-23 06:50:22 --> mysqli_sql_exception: Column 'nik' cannot be null in C:\xampp2\htdocs\epemas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\epemas\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\xampp2\htdocs\epemas\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\xampp2\htdocs\epemas\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\xampp2\htdocs\epemas\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\xampp2\htdocs\epemas\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\epemas\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\epemas\system\Model.php(729): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp2\htdocs\epemas\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp2\htdocs\epemas\app\Controllers\Register.php(83): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(934): App\Controllers\Register->validation()
+#10 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#11 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\epemas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp2\htdocs\epemas\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#14 {main}
+CRITICAL - 2023-02-23 06:50:22 --> Column 'nik' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `masyarakat` (`username`, `tlpn`, `nik`, `email`, `password`) VALUES (:username:, :tlpn:, :nik:, :email:, :password:)', [...], false)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Register.php(83): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Register->validation()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-23 06:50:38 --> mysqli_sql_exception: Column 'nik' cannot be null in C:\xampp2\htdocs\epemas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\epemas\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\xampp2\htdocs\epemas\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\xampp2\htdocs\epemas\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\xampp2\htdocs\epemas\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\xampp2\htdocs\epemas\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\epemas\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\epemas\system\Model.php(729): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp2\htdocs\epemas\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp2\htdocs\epemas\app\Controllers\Register.php(83): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(934): App\Controllers\Register->validation()
+#10 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#11 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\epemas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp2\htdocs\epemas\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#14 {main}
+CRITICAL - 2023-02-23 06:50:38 --> Column 'nik' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `masyarakat` (`username`, `tlpn`, `nik`, `email`, `password`) VALUES (:username:, :tlpn:, :nik:, :email:, :password:)', [...], false)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Register.php(83): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Register->validation()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-23 06:51:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 06:52:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-23 06:52:24 --> Undefined variable $db
+in APPPATH\Controllers\Register.php on line 87.
+ 1 APPPATH\Controllers\Register.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'APPPATH\\Controllers\\Register.php', 87)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Register->validation()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-23 06:53:01 --> mysqli_sql_exception: Duplicate entry '3232212411' for key 'PRIMARY' in C:\xampp2\htdocs\epemas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\epemas\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\xampp2\htdocs\epemas\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\xampp2\htdocs\epemas\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\xampp2\htdocs\epemas\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\xampp2\htdocs\epemas\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\epemas\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\epemas\system\Model.php(729): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp2\htdocs\epemas\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp2\htdocs\epemas\app\Controllers\Register.php(84): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(934): App\Controllers\Register->validation()
+#10 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#11 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\epemas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp2\htdocs\epemas\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#14 {main}
+CRITICAL - 2023-02-23 06:53:01 --> Duplicate entry '3232212411' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `masyarakat` (`username`, `tlpn`, `nik`, `email`, `password`) VALUES (:username:, :tlpn:, :nik:, :email:, :password:)', [...], false)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Register.php(84): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Register->validation()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-23 06:53:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 06:54:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-02-23 06:56:07 --> mysqli_sql_exception: Duplicate entry '32322124111232' for key 'PRIMARY' in C:\xampp2\htdocs\epemas\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp2\htdocs\epemas\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\xampp2\htdocs\epemas\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\xampp2\htdocs\epemas\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\xampp2\htdocs\epemas\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\xampp2\htdocs\epemas\system\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp2\htdocs\epemas\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp2\htdocs\epemas\system\Model.php(729): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp2\htdocs\epemas\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp2\htdocs\epemas\app\Controllers\Register.php(84): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(934): App\Controllers\Register->validation()
+#10 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#11 C:\xampp2\htdocs\epemas\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp2\htdocs\epemas\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp2\htdocs\epemas\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#14 {main}
+CRITICAL - 2023-02-23 06:56:07 --> Duplicate entry '32322124111232' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `masyarakat` (`username`, `nama`, `tlpn`, `nik`, `email`, `password`) VALUES (:username:, :nama:, :tlpn:, :nik:, :email:, :password:)', [...], false)
+ 2 SYSTEMPATH\Model.php(329): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(729): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Register.php(84): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Register->validation()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-23 06:56:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 06:58:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-23 07:07:53 --> Attempt to read property "password" on array
+in APPPATH\Controllers\Login.php on line 95.
+ 1 APPPATH\Controllers\Login.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "password" on array', 'APPPATH\\Controllers\\Login.php', 95)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-23 07:10:42 --> Undefined constant "App\Controllers\password"
+in APPPATH\Controllers\Login.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-23 07:10:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 07:12:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 07:12:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 07:12:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 07:13:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 07:13:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-23 07:13:41 --> Undefined property: stdClass::$UserID
+in APPPATH\Controllers\Login.php on line 100.
+ 1 APPPATH\Controllers\Login.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$UserID', 'APPPATH\\Controllers\\Login.php', 100)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-23 07:14:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 07:14:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 07:26:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 07:31:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-23 07:32:12 --> Class "App\Models\PetugasModel" not found
+in APPPATH\Controllers\Login.php on line 92.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->authP()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-23 07:32:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-23 07:46:19 --> Class "App\Controllers\admin\BaseController" not found
+in APPPATH\Controllers\admin\Dashboard.php on line 5.
+ 1 SYSTEMPATH\Router\AutoRouter.php(147): include_once()
+ 2 SYSTEMPATH\Router\Router.php(506): CodeIgniter\Router\AutoRouter->getRoute('admin/Dashboard')
+ 3 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('admin/Dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('admin/Dashboard')
+ 5 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-23 07:46:48 --> Class "App\Controllers\admin\BaseController" not found
+in APPPATH\Controllers\admin\Dashboard.php on line 5.
+ 1 SYSTEMPATH\Router\AutoRouter.php(147): include_once()
+ 2 SYSTEMPATH\Router\Router.php(506): CodeIgniter\Router\AutoRouter->getRoute('admin/Dashboard')
+ 3 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('admin/Dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('admin/Dashboard')
+ 5 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-23 07:46:50 --> Class "App\Controllers\admin\BaseController" not found
+in APPPATH\Controllers\admin\Dashboard.php on line 5.
+ 1 SYSTEMPATH\Router\AutoRouter.php(147): include_once()
+ 2 SYSTEMPATH\Router\Router.php(506): CodeIgniter\Router\AutoRouter->getRoute('admin/Dashboard')
+ 3 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('admin/Dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('admin/Dashboard')
+ 5 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-23 07:46:59 --> Undefined property: App\Controllers\admin\Dashboard::$session
+in APPPATH\Controllers\admin\Dashboard.php on line 9.
+ 1 APPPATH\Controllers\admin\Dashboard.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\admin\\Dashboard::$session', 'APPPATH\\Controllers\\admin\\Dashboard.php', 9)
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\admin\Dashboard->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-23 07:48:12 --> Undefined property: App\Controllers\admin\Dashboard::$session
+in APPPATH\Controllers\admin\Dashboard.php on line 79.
+ 1 APPPATH\Controllers\admin\Dashboard.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\admin\\Dashboard::$session', 'APPPATH\\Controllers\\admin\\Dashboard.php', 79)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\admin\Dashboard->logout()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-23 07:59:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 07:59:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 08:00:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 08:02:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 08:02:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 08:02:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 08:02:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 08:03:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-02-23 08:03:02 --> Class "CI_Model" not found
+in APPPATH\Models\Model_Kategori.php on line 1.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\Model_Kategori.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Model_Kategori')
+ 4 APPPATH\Controllers\admin\Dashboard.php(38): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Model_Kategori')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\admin\Dashboard->kategori()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-02-23 08:03:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-02-23 08:06:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
